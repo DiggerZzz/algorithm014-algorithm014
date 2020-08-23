@@ -26,24 +26,25 @@
 
 ##总结
 树的前、中、后序遍历
-
+```
 public List<Integer> traversal(TreeNode root) {
-     if (root == null) return new ArrayList<Integer>();
-     
-     TreeNode node = root;
-     List<Integer> ret = new ArrayList<Integer>();
-     
-     Stack<TreeNode> stack = new Stack<TreeNode>();
-     while(node != null || !stack.isEmpty()) {
-         while (node != null) {
-             stack.push(node);
-             // 先序遍历
-             node = node.left;
-         }
-         node = stack.pop();
-         // 中序遍历
-         node = node.right;
-         // 后序遍历
-     }
-     return ret;
- }
+      if (root == null) return new ArrayList<Integer>();
+      
+      TreeNode node = root;
+      List<Integer> ret = new ArrayList<Integer>();
+      
+      Stack<TreeNode> stack = new Stack<TreeNode>();
+      while(node != null || !stack.isEmpty()) {
+          while (node != null) {
+              stack.push(node);
+              // 先序遍历
+              node = node.left;
+          }
+          node = stack.pop();
+          // 中序遍历
+          node = node.right;
+          // 后序遍历
+      }
+      return ret;
+  }
+```
