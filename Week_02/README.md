@@ -21,11 +21,11 @@
 |#1021 删除最外层的括号         |简单	                |
 |#350 两个数组的交集 II        |简单	                |
 
-##知识点
+## 知识点
 哈希表、树、二叉树、二叉搜索树、堆、二叉堆、图
 
-##总结
-树的前、中、后序遍历
+## 总结
+树的前、中、后序遍历代码模板
 ```
 public List<Integer> traversal(TreeNode root) {
       if (root == null) return new ArrayList<Integer>();
